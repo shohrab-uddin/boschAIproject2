@@ -1,4 +1,4 @@
-# BOSCH AI - Project 2
+# BOSCH AI (DevOps) - Project 2 - A Python Based Machine Learning Application with CI and CD
 
 [![Python application test with Github Actions](https://github.com/shohrab-uddin/boschAIproject2/actions/workflows/pythonapp.yml/badge.svg)](https://github.com/shohrab-uddin/boschAIproject2/actions/workflows/pythonapp.yml)
 
