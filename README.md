@@ -212,31 +212,33 @@ stages:
               package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
 
 ```
-- Configure python to Linux Web app on Azure
-- Set up the continuous delivery workflow
 
-## Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
-
+## Successful deploy of the project in Azure Pipelines.
+![image](https://user-images.githubusercontent.com/110354988/187011905-de11a7b7-1db5-4a95-899a-82653eaddaa9.png)
 
 
 ## Running Azure App Service from Azure Pipelines automatic deployment
+![image](https://user-images.githubusercontent.com/110354988/187011872-fdebadc6-ca22-4b00-aee0-cb5853a9fa86.png)
 
-## Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
+
+## Successful prediction from deployed flask app in Azure Cloud Shell.
 
 ```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
+(.myrepo) odl_user [ ~/boschAIproject2 ]$ ./make_predict_azure_app.sh
 Port: 443
-{"prediction":[20.35373177134412]}
+{"prediction":[36.357041376594935]}
 ```
 
-* Output of streamed log files from deployed application
+## Output of streamed log files from deployed application
+![image](https://user-images.githubusercontent.com/110354988/187012019-d58b169d-5f5d-4bc3-8412-2be9a7603e70.png)
 
-> 
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+* Future improvement options
+
+- Make the web application's UI more user friendly.
+- Create a dashboard where user can easily see prediction result
 
 ## Demo 
 
