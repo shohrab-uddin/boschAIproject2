@@ -217,12 +217,8 @@ stages:
 ![image](https://user-images.githubusercontent.com/110354988/187037296-600d248a-9d47-470a-9841-08c325cfc617.png)
 
 
-## Successful deploy of the project in Azure Pipelines.
+## History of Continuous Delivery in azure piplines.
 ![image](https://user-images.githubusercontent.com/110354988/187011905-de11a7b7-1db5-4a95-899a-82653eaddaa9.png)
-
-
-## Running Azure App Service from Azure Pipelines automatic deployment
-![image](https://user-images.githubusercontent.com/110354988/187011872-fdebadc6-ca22-4b00-aee0-cb5853a9fa86.png)
 
 
 ## Successful prediction from deployed flask app in Azure Cloud Shell.
