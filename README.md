@@ -36,33 +36,45 @@ Now go to the boschAiProject2 directory (cd boschAIproject2/)
 
 ![image](https://user-images.githubusercontent.com/110354988/187009401-ec4f8f63-6ec0-4530-815a-a92ced8e9e00.png)
 
-### Install Python Packages, Test and Lint
+### Make file to install packages and to run test and lint
 Run 'make all' command. The Makefile looks as follows:
 ```
-setup:
-	python3 -m venv ~/.flask-ml-azure
-	#source ~/.flask-ml-azure/bin/activate
-	
 install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 
 test:
-	#python -m pytest -vv --cov=myrepolib tests/*.py
-	#python -m pytest --nbval notebook.ipynb
+	python -m pytest -vv test_hello.py
 
 
 lint:
-	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
-	pylint --disable=R,C,W1203,bare-except --fail-under=6 app.py
+	pylint --disable=R,C hello.py
+	pylint --disable=R,C,W1203,W0702 app.py
 
 all: install lint test
 
 ```
-Local test result should look like this:
+### Passing tests that are displayed after running the `make all` command from the `Makefile`
 
 ![image](https://user-images.githubusercontent.com/110354988/187009590-57013d72-4090-4c4f-85b5-baec75bc2546.png)
 
+### requirements.txt contains all the libraries 
+
+```
+Flask==2.0.3
+pandas==1.1.5
+scikit-learn==0.24.2
+importlib-metadata==4.8.3
+virtualenv==20.14.1
+argcomplete==2.0.0
+joblib==1.1.0
+pylint==2.13.7
+pytest==7.0.1
+
+```
+
+## Github Actions - CI Build ##
+![image](https://user-images.githubusercontent.com/110354988/186958894-2cdb2df2-5f56-4342-8a3f-cac881035fcd.png)
 
 ## Project running on Azure App Service
 Run the following command to deploy the sourcode into Azure Web App Services and access it later on just like a web application. You must run this command from inside the repositordy directory.
@@ -72,11 +84,9 @@ Run the following command to deploy the sourcode into Azure Web App Services and
 ```
 Here -g means Rsource Group and -n means the name of your application. 
 
-## Passing tests that are displayed after running the `make all` command from the `Makefile`
-
-## Output of a test run
-
 ## Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
+
+
 
 ## Running Azure App Service from Azure Pipelines automatic deployment
 
@@ -101,9 +111,3 @@ Port: 443
 
 <TODO: Add link Screencast on YouTube>
 
-
-
-
-
-## Github Actions - CI Build ##
-![image](https://user-images.githubusercontent.com/110354988/186958894-2cdb2df2-5f56-4342-8a3f-cac881035fcd.png)
