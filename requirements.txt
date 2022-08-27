@@ -1,7 +1,7 @@
 Flask==2.0.3
 pandas==1.1.5
 scikit-learn==0.24.2
-importlib-metadata==4.11.3
+importlib-metadata==4.8.3
 virtualenv==20.14.1
 argcomplete==2.0.0
 joblib==1.1.0
