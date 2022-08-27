@@ -100,6 +100,8 @@ Edit file 'make_predict_azure_app.sh' and replace '< yourappname >' with your we
 
 ![image](https://user-images.githubusercontent.com/110354988/187010881-28d3953b-5090-47c8-bd00-58e9d57610c3.png)
 
+This shell script is responsible for sending some input data to your application via the appropriate port. Each numerical value in here represents some feature that is important for determining the price of a house in Boston. The source code is responsible for passing that data through a trained, machine learning model, and giving back a predicted value for the house price.
+
 
 ## Creating CD using Azure Pipeline
 - Before you create a new project, ensure to make your DevOps project allow public access by turning the visibility on in the Organization settings >> Policies section
