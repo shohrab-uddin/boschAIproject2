@@ -213,6 +213,10 @@ stages:
 
 ```
 
+## Successful build and deploy stages in Azure Pipeline.
+![image](https://user-images.githubusercontent.com/110354988/187037296-600d248a-9d47-470a-9841-08c325cfc617.png)
+
+
 ## Successful deploy of the project in Azure Pipelines.
 ![image](https://user-images.githubusercontent.com/110354988/187011905-de11a7b7-1db5-4a95-899a-82653eaddaa9.png)
 
