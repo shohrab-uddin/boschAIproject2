@@ -74,7 +74,10 @@ pytest==7.0.1
 ```
 
 ## Github Actions - CI Build ##
-![image](https://user-images.githubusercontent.com/110354988/186958894-2cdb2df2-5f56-4342-8a3f-cac881035fcd.png)
+
+'Github Actions' SaaS is used for Continuous Integration (CI).
+
+![image](https://user-images.githubusercontent.com/110354988/187010387-93965df5-0b28-42b6-9a55-019a6d84fa69.png)
 
 ## Project running on Azure App Service
 Run the following command to deploy the sourcode into Azure Web App Services and access it later on just like a web application. You must run this command from inside the repositordy directory.
@@ -83,6 +86,8 @@ Run the following command to deploy the sourcode into Azure Web App Services and
 .myrepo) odl_user [ ~/boschAIproject2 ]$ az webapp up -g Azuredevops -n flaskAzureApp
 ```
 Here -g means Rsource Group and -n means the name of your application. 
+
+## Creating Azure Pipeline
 
 ## Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
