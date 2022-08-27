@@ -13,7 +13,7 @@ variables:
   azureServiceConnectionId: 'myServiceConnection'
   
   # TODO: Replace 'mywebapp193576' with the existing Web App name
-  webAppName: flaskAzureApp'
+  webAppName: 'flaskAzureApp'
 
   # Environment name
   environmentName: 'flaskAzureApp'
