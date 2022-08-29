@@ -102,7 +102,7 @@ Edit file 'make_predict_azure_app.sh' and replace '< yourappname >' with your we
 
 This shell script is responsible for sending some input data to your application via the appropriate port. Each numerical value in here represents some feature that is important for determining the price of a house in Boston. The source code is responsible for passing that data through a trained, machine learning model, and giving back a predicted value for the house price.
 
-##Test with Locust
+## Test with Locust
 Performance validation of the webapp can be performed via a load test using locust. Replace '< yourappname >' in the provided configuration and call locust:
 
 ![image](https://user-images.githubusercontent.com/110354988/187227307-39044d06-58ef-4e56-961b-7d35460eea0c.png)
