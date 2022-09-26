@@ -85,7 +85,7 @@ In the screenshot below you can see the CI steps:
 
 
 ## Project running on Azure App Service
-Run the following command to deploy the sourcode (basic Flask application) into Azure Web App Services and access it later on just like a web application. You must run this command from inside the repositordy directory.
+Run the following command to deploy the sourcode (basic Flask application) into Azure Web App Services and access it later on just like a web application. You must run this command from inside the repository directory.
 
 ```
 .myrepo) odl_user [ ~/boschAIproject2 ]$ az webapp up -g Azuredevops -n flaskAzureApp
