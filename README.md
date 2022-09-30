@@ -11,7 +11,7 @@ This repository contains the codebase of a python based machine learnig applicat
 
 ## Project Plan
 
-* You can find the planned tasks for this prject this this [trelleo board](https://trello.com/b/lTvxVyON/python-based-mla).
+* You can find the planned tasks for this project this this [trelleo board](https://trello.com/b/lTvxVyON/python-based-mla).
 * You can find the project plan from this [spread sheet](https://docs.google.com/spreadsheets/d/16zQYVkjUZa6Vl1MJPTLpffWVv3kq7150AxSUnm7mKpg/edit?usp=sharing). 
 
 ## The Architectural Diagram
